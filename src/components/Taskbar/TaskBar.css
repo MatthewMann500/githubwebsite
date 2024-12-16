@@ -40,4 +40,8 @@
   .right {
     justify-content: flex-end;
   }
+
+  .space-between{
+    width: 10px;
+  }
   

@@ -15,6 +15,7 @@
     background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
     box-shadow: 0px 5px 10px #79ce71 inset;
     cursor: pointer; 
+    margin-right: 5px;
   
     &::before {
       content: '';
@@ -38,7 +39,11 @@
         filter: brightness(0.9); /* Increase brightness for a "light up" effect */
     }
 }
-
+.start-label{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+}
 .microsoft-logo{
     height: 18px;
     width: 18px;

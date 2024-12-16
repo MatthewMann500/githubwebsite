@@ -1,0 +1,29 @@
+.Pinned-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px; /* Adjust as needed */
+    width: 20px;  /* Adjust as needed */
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
+  .Pinned-Button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .Pinned-Button:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+  }
+  
+  .Pinned-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the button area */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  

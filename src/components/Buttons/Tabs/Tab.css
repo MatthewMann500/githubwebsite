@@ -1,0 +1,71 @@
+.Tab-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px; 
+    width: 200px;  
+    margin-top: 2px;
+    margin-right: 2px;
+  }
+  
+  .Tab-Button {
+    background: linear-gradient(to bottom, #5a9cf8, #397FF4);
+    border: 2px solid #1c4da1;
+    padding: 0 15 0 15;
+    cursor: pointer;
+    height: 25px; 
+    width: 200px;
+    outline: none;
+    box-shadow: 
+    inset 1px 1px 0px #81b6ff,    
+    inset -1px -1px 0px #1c4da1,  
+    2px 2px 4px rgba(0, 0, 0, 0.2);  
+    text-shadow: 1px 1px 0px #1a3f73; 
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Tab-Button:hover {
+    opacity: 0.8; 
+  }
+
+  .Tab-Button:hover img {
+    opacity: 0.8; 
+  }
+
+  .Tab-Button:active{
+    background: linear-gradient(to bottom, #397FF4, #1c5dbc); 
+    box-shadow: 
+        inset 2px 2px 3px #1c4da1; 
+    transform: translateY(0.1px);
+  }
+  
+  .Tab-Button:active img {
+    transform: translateY(0.5px); 
+  }
+
+  .Tab-Button:active label {
+    transform: translateY(0.5px); 
+  }
+
+  .Tab-Image {
+    display: flex;
+    justify-content: flex-start;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px; 
+    margin-right: 20px;
+  }
+
+  .Tab-Text{
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  

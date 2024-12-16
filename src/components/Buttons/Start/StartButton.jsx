@@ -4,9 +4,13 @@ import './StartButton.css';
 
 const StartButton = () => {
   return (
-    <button class="start-button">
-        <img src={logo} class="microsoft-logo" alt="logo"/>
-        <label>start</label>
+    <button className="start-button">
+        <div className="microsoft-logo">
+        <img src={logo} className="microsoft-logo" alt="logo"/>
+        </div>
+        <div className="start-label">
+            <label>start</label>
+        </div>
     </button>
   );
 };
