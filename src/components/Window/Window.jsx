@@ -62,7 +62,11 @@ const XPWindow = ({ title, children }) => {
     >
       <div className="xp-window-titlebar" onMouseDown={handleMouseDown}>
         <span className="xp-window-title">{title}</span>
-        <button className="xp-close-button">✕</button>
+        <div className="xp-window-buttons">
+            <button className="xp-button">_</button> {/* Minimize button */}
+            <button className="xp-button">□</button> {/* Maximize button */}
+            <button className="xp-button">✕</button> {/* Close button */}
+        </div>
       </div>
       <div className="xp-window-content">
         {children}

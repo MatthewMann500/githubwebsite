@@ -13,7 +13,7 @@
     color: white;
     padding: 4px 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
@@ -22,10 +22,17 @@
   }
   
   .xp-window-title {
+    flex-grow: 1; /* Ensure title takes all available space to the left */
+    text-align: left; /* Align title to the left */
     user-select: none;
   }
   
-  .xp-close-button {
+  .xp-window-buttons {
+    display: flex; /* Arrange buttons horizontally */
+    gap: 5px; /* Space between buttons */
+}
+
+.xp-button {
     background: linear-gradient(to bottom, #f1f1f1, #d4d0c8);
     border: 1px solid #808080;
     color: #000;
@@ -35,9 +42,13 @@
     cursor: pointer;
     font-weight: bold;
     box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #808080;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; /* Adjust button text size */
+}
   
-  .xp-close-button:active {
+  .xp-button:active {
     box-shadow: inset 1px 1px 3px #555;
   }
   
