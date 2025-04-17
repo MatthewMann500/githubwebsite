@@ -1,0 +1,113 @@
+.ie {
+    background: linear-gradient(to right, #edede5 0%, #ede8cd 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.ie-toolbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    height: 24px;
+    user-select: none;
+}
+.ie-function-bar{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    user-select: none;
+
+}
+.ie-address-bar{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    height: 24px;
+    user-select: none;
+
+}
+.search-Engine{
+    position: relative;
+    min-height: 800px;
+    min-width: 800px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+}
+.ie-footer{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    height: 20px;
+    user-select: none;
+}
+.ie-option {
+    padding: 7px 6px;
+    cursor: default;
+    position: relative;
+    color: black;
+}
+
+.ie-option:hover {
+    background-color: #0a246a;
+    color: white;
+}
+.dropdown{
+    z-index: 10;
+    padding: 2px;
+    left: 0px;
+    line-height: 18px;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: rgb(100, 100, 100) 2px 2px 1px;
+    border: 1px solid gray;
+    grid-template-columns: 16px auto auto 15px 0px; 
+}
+.menu-option{
+    grid-column-start: 2;
+    color: black;
+    padding-right: 8px;
+    white-space: nowrap;
+}
+.menu-check{
+    grid-column-start: 1;
+
+}
+.menu-shortcut{
+    grid-column-start: 3;
+    color: black;
+    white-space: nowrap;
+    padding-right: 2px;
+}
+.menu-arrow{
+    grid-column-start: 4;
+
+}
+.menu-row {
+    position: relative;
+    display: contents;
+}
+.menu-row:hover .menu-check,
+.menu-row:hover .menu-option,
+.menu-row:hover .menu-shortcut,
+.menu-row:hover .menu-arrow {
+    background-color: #0a246a;
+    color: white;
+}

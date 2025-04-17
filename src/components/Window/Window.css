@@ -53,7 +53,6 @@
   }
   
   .xp-window-content {
-    padding: 15px;
     height: calc(100% - 40px); /* Adjust content height to fit the window */
     overflow: auto;
   }

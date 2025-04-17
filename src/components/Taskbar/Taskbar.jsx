@@ -7,19 +7,27 @@ import explorer from '../../Images/emblem-web.png';
 import paint from '../../Images/gnome-fs-desktop.png';
 import player from '../../Images/emblem-videos.png';
 import Tab from '../Buttons/Tabs/Tab';
+const TaskBar = ({ windows, onClick }) => {
 
-const TaskBar = () => {
+    const onPinnedClick = (pinnedData) => {      
+        onClick({
+            title: pinnedData.title,
+            imageUrl: pinnedData.imageUrl,
+        }); 
+    }
+
   return (
     <div className="taskbar">
       <div className="taskbar-section left">
         <StartButton />
-        <Pinned imageUrl={explorer} altText="Explorer" />
-        <Pinned imageUrl={mail} altText="Mail" />
-        <Pinned imageUrl={paint} altText="Paint" />
-        <Pinned imageUrl={player} altText="Player" />
-        <div className="space-between"></div>
-        <Tab imageUrl={explorer} altText="Explorer" text="Internet Explorer"/>
-        <Tab imageUrl={mail} altText="Mail" text="Mail"/>
+        <Pinned imageUrl={explorer} altText="Explorer" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={mail} altText="Mail" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={paint} altText="Paint" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={player} altText="Player" onPinnedClick={onPinnedClick}/>
+        <div className="space-between"></div>    
+        {windows.map(tab => (
+            <Tab key={tab.id} imageUrl={tab.imageUrl} altText={tab.title} text={tab.title} /> 
+        ))}
       </div>
       <div className="taskbar-section right">
         <div className="taskbar-item">12:45 PM</div>

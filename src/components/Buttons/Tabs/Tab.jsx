@@ -1,7 +1,12 @@
 import React from 'react';
 import './Tab.css';
 
-const Tab = ({ imageUrl, altText = 'Pinned Image', text}) => {
+const Tab = ({ imageUrl, altText = 'Pinned Image', text, onTabClick }) => {
+	const handleClick = () => {
+    onTabClick({
+      
+    });
+  };
   return (
     <div className="Tab-Container">
       <button className="Tab-Button">
