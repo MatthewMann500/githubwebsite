@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
+    
 }
 .ie-toolbar {
     display: flex;
@@ -16,6 +16,7 @@
     font-size: 14px;
     height: 24px;
     user-select: none;
+    flex-shrink: 0;
 }
 .ie-function-bar{
     display: flex;
@@ -26,6 +27,7 @@
     font-size: 14px;
     height: 36px;
     user-select: none;
+    flex-shrink: 0;
 
 }
 .ie-address-bar{
@@ -37,16 +39,14 @@
     font-size: 14px;
     height: 24px;
     user-select: none;
+    flex-shrink: 0;
 
 }
 .search-Engine{
-    position: relative;
-    min-height: 800px;
-    min-width: 800px;
-    height: 100%;
-    width: 100%;
+    flex: 1;
+    overflow: auto; 
     background-color: white;
-
+    
 }
 .ie-footer{
     display: flex;
@@ -56,6 +56,7 @@
     font-size: 14px;
     height: 20px;
     user-select: none;
+    flex-shrink: 0;
 }
 .ie-option {
     padding: 7px 6px;
@@ -111,3 +112,120 @@
     background-color: #0a246a;
     color: white;
 }
+.links{
+    color: black;
+}
+.trevmatt {
+    display: block;
+    margin-top: 100px;
+    max-width: 800px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+.explorer-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.explorer-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+    font-size: 14px;
+    color: black;
+}
+.search-bar {
+  margin-top: 24px;
+  padding: 10px 16px;
+  width: 50%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.explorer-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.explorer-buttons button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #3c4043;
+  cursor: pointer;
+}
+
+.explorer-buttons button:hover {
+  border: 1px solid #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.footer-explorer{
+  margin-top: auto;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  background: #f2f2f2;
+  box-shadow: inset 0 1px 0 #dadce0;
+  color: black;
+}
+
+.footer-left-items,
+.footer-right-items {
+    margin-left: 10px;
+    margin-right: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.search-results-page {
+    padding: 20px;
+    background-color: white;
+}
+
+.search-results-list {
+    list-style: none;
+    padding: 0;
+}
+
+.search-result-item {
+    margin-bottom: 15px;
+}
+
+.result-link {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.result-link h3 {
+    margin: 0;
+}
+
+.result-link p {
+    margin: 5px 0;
+    color: #545454;
+}
+

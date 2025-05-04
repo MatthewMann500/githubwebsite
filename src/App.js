@@ -27,9 +27,7 @@ function App() {
         <img src={background} className="App-logo" alt="logo" />
         {windows.map(win => (
         <XPWindow key={win.id} title={win.title} onClose={() => handleCloseWindow(win.id)}>
-          <div>
             <Explorer/>
-          </div>
         </XPWindow>
       ))}
         <TaskBar onClick={handleOpenWindow} windows={windows}/>

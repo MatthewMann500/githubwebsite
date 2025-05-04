@@ -31,8 +31,8 @@
 
 .xp-window {
   position: absolute; /* Allows free positioning over the background */
-  top: 50px;          /* Adjust as needed */
-  left: 50px;         /* Adjust as needed */
+  top: 400px;          /* Adjust as needed */
+  left: 400px;         /* Adjust as needed */
   z-index: 1;         /* Ensure it's above the background */
 }
 .taskbar{
