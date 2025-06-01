@@ -13,6 +13,7 @@ const TaskBar = ({ windows, onClick }) => {
         onClick({
             title: pinnedData.title,
             imageUrl: pinnedData.imageUrl,
+            type: pinnedData.type,
         }); 
     }
 
@@ -20,10 +21,10 @@ const TaskBar = ({ windows, onClick }) => {
     <div className="taskbar">
       <div className="taskbar-section left">
         <StartButton />
-        <Pinned imageUrl={explorer} altText="Explorer" onPinnedClick={onPinnedClick}/>
-        <Pinned imageUrl={mail} altText="Mail" onPinnedClick={onPinnedClick}/>
-        <Pinned imageUrl={paint} altText="Paint" onPinnedClick={onPinnedClick}/>
-        <Pinned imageUrl={player} altText="Player" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={explorer} altText="Explorer" type="explorer" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={mail} altText="Mail" type="mail" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={paint} altText="Paint" type="paint" onPinnedClick={onPinnedClick}/>
+        <Pinned imageUrl={player} altText="Player" type="audio" onPinnedClick={onPinnedClick}/>
         <div className="space-between"></div>    
         {windows.map(tab => (
             <Tab key={tab.id} imageUrl={tab.imageUrl} altText={tab.title} text={tab.title} /> 

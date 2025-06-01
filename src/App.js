@@ -4,15 +4,22 @@ import './App.css';
 import TaskBar from './components/Taskbar/Taskbar';
 import XPWindow from './components/Window/Window';
 import Explorer from './components/Apps/Explorer'
+import Mail from './components/Apps/Mail/Mail'
 function App() {
-	const [windows, setWindows] = useState([]);
+	const [windows, setWindows] = useState([
+    { id: 1, title: "Explorer", type: "explorer" },
+    { id: 2, title: "Mail", type: "mail" },
+    { id: 3, title: "Paint", type: "paint" },
+    { id: 4, title: "Audio", type: "audio" },
+  ]);
 	
 	const handleOpenWindow = (windowData) => {
 		const newWindow = {
 			id: Date.now(), 
 			title: windowData.title,
+      type: windowData.type,
 			content: `This is window ${windows.length + 1}`,
-            imageUrl: windowData.imageUrl,
+      imageUrl: windowData.imageUrl,
 		};
 		setWindows(prev => [...prev, newWindow]);
   };
@@ -27,7 +34,8 @@ function App() {
         <img src={background} className="App-logo" alt="logo" />
         {windows.map(win => (
         <XPWindow key={win.id} title={win.title} onClose={() => handleCloseWindow(win.id)}>
-            <Explorer/>
+            {win.type === "explorer" && <Explorer />}
+            {win.type === "mail" && <Mail />}
         </XPWindow>
       ))}
         <TaskBar onClick={handleOpenWindow} windows={windows}/>

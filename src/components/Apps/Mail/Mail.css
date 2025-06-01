@@ -1,0 +1,77 @@
+.mail-container {
+  font-family: Tahoma, sans-serif;
+  background-color: #ece9d8;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.mail-toolbar {
+  background-color: #d4d0c8;
+  padding: 4px 6px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px groove #fff;
+  user-select: none;
+}
+
+.mail-toolbar button {
+  font-size: 12px;
+  padding: 2px 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  cursor: pointer;
+  box-shadow:
+    1px 1px 0 #fff inset,
+    -1px -1px 0 #aaa inset;
+}
+
+.mail-toolbar button:active {
+  box-shadow:
+    inset 1px 1px 2px #555;
+  background-color: #c0c0c0;
+}
+
+.mail-form {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+}
+
+.mail-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mail-fields input,
+.mail-form textarea {
+  border: 1px solid #aaa;
+  padding: 4px;
+  font-size: 12px;
+  font-family: Tahoma, sans-serif;
+  background-color: #fff;
+  color: #000;
+  box-shadow:
+    inset 1px 1px 3px #ddd;
+}
+
+.mail-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.mail-status-bar {
+  background-color: #d4d0c8;
+  padding: 4px 6px;
+  font-size: 12px;
+  border-top: 2px groove #fff;
+  user-select: none;
+  min-height: 20px;
+}
