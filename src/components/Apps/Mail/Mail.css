@@ -24,14 +24,11 @@
   background-color: #f0f0f0;
   border: 1px solid #999;
   cursor: pointer;
-  box-shadow:
-    1px 1px 0 #fff inset,
-    -1px -1px 0 #aaa inset;
+  box-shadow: 1px 1px 0 #fff inset, -1px -1px 0 #aaa inset;
 }
 
 .mail-toolbar button:active {
-  box-shadow:
-    inset 1px 1px 2px #555;
+  box-shadow: inset 1px 1px 2px #555;
   background-color: #c0c0c0;
 }
 
@@ -58,8 +55,7 @@
   font-family: Tahoma, sans-serif;
   background-color: #fff;
   color: #000;
-  box-shadow:
-    inset 1px 1px 3px #ddd;
+  box-shadow: inset 1px 1px 3px #ddd;
 }
 
 .mail-form textarea {
