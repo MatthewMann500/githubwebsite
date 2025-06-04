@@ -6,10 +6,10 @@
 }
 
 .App-logo {
-  width: 100vw;    
+  width: 100vw;
   height: 100vh;
-  object-fit: cover; 
-  display: block; 
+  object-fit: cover;
+  display: block;
   pointer-events: none;
   z-index: 0;
 }
@@ -30,11 +30,40 @@
 }
 
 .xp-window {
-  position: absolute; /* Allows free positioning over the background */
-  top: 400px;          /* Adjust as needed */
-  left: 400px;         /* Adjust as needed */
-  z-index: 1;         /* Ensure it's above the background */
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  z-index: 1;
 }
-.taskbar{
+.taskbar {
   z-index: 2;
+}
+
+.desktop-icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.desktop-icon {
+  width: 80px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon-label {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.icon-image {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
 }

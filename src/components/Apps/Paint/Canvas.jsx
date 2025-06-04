@@ -163,7 +163,6 @@ const Canvas = ({ tool, brushColor, brushSize }) => {
           onMouseLeave={stopDrawing}
         />
 
-        {/* Resizers */}
         <div
           onMouseDown={(e) => startResize(e, "right")}
           style={{
@@ -206,7 +205,6 @@ const Canvas = ({ tool, brushColor, brushSize }) => {
         />
       </div>
 
-      {/* Resize Outline Preview */}
       <div
         ref={overlayRef}
         style={{
