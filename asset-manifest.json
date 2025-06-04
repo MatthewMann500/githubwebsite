@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/githubwebsite/static/css/main.2cdd7aba.css",
-    "main.js": "/githubwebsite/static/js/main.e58411bc.js",
-    "static/js/453.264d48c2.chunk.js": "/githubwebsite/static/js/453.264d48c2.chunk.js",
-    "static/media/WindowsXPBackground.jpg": "/githubwebsite/static/media/WindowsXPBackground.17ce657ab1362be245f5.jpg",
-    "static/media/trevmattpng.png": "/githubwebsite/static/media/trevmattpng.6604a42b18eff10fcac4.png",
-    "static/media/emblem-videos.png": "/githubwebsite/static/media/emblem-videos.64fb32771d9ee302f8ab.png",
-    "static/media/emblem-web.png": "/githubwebsite/static/media/emblem-web.cc9b99ff972f6488f6f7.png",
-    "static/media/emblem-mail.png": "/githubwebsite/static/media/emblem-mail.cf7edd9e76f90a3609c8.png",
-    "static/media/logo.png": "/githubwebsite/static/media/logo.e1fe4a143c1cf960cc04.png",
-    "static/media/gnome-fs-desktop.png": "/githubwebsite/static/media/gnome-fs-desktop.cbda384612b0e97ada82.png",
-    "index.html": "/githubwebsite/index.html",
-    "main.2cdd7aba.css.map": "/githubwebsite/static/css/main.2cdd7aba.css.map",
-    "main.e58411bc.js.map": "/githubwebsite/static/js/main.e58411bc.js.map",
-    "453.264d48c2.chunk.js.map": "/githubwebsite/static/js/453.264d48c2.chunk.js.map"
+    "main.css": "/static/css/main.625e5034.css",
+    "main.js": "/static/js/main.e76630f6.js",
+    "static/js/453.264d48c2.chunk.js": "/static/js/453.264d48c2.chunk.js",
+    "static/media/WindowsXPBackground.jpg": "/static/media/WindowsXPBackground.17ce657ab1362be245f5.jpg",
+    "static/media/trevmattpng.png": "/static/media/trevmattpng.6604a42b18eff10fcac4.png",
+    "static/media/emblem-videos.png": "/static/media/emblem-videos.64fb32771d9ee302f8ab.png",
+    "static/media/emblem-web.png": "/static/media/emblem-web.cc9b99ff972f6488f6f7.png",
+    "static/media/emblem-mail.png": "/static/media/emblem-mail.cf7edd9e76f90a3609c8.png",
+    "static/media/logo.png": "/static/media/logo.e1fe4a143c1cf960cc04.png",
+    "static/media/gnome-fs-desktop.png": "/static/media/gnome-fs-desktop.cbda384612b0e97ada82.png",
+    "index.html": "/index.html",
+    "main.625e5034.css.map": "/static/css/main.625e5034.css.map",
+    "main.e76630f6.js.map": "/static/js/main.e76630f6.js.map",
+    "453.264d48c2.chunk.js.map": "/static/js/453.264d48c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cdd7aba.css",
-    "static/js/main.e58411bc.js"
+    "static/css/main.625e5034.css",
+    "static/js/main.e76630f6.js"
   ]
 }
