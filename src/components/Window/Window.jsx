@@ -9,6 +9,9 @@ const XPWindow = ({
   minimized,
   onFocus,
   zIndex,
+  fixedSize = false,
+  fixedWidth,
+  fixedHeight,
 }) => {
   const windowRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -16,7 +19,10 @@ const XPWindow = ({
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   const [isResizing, setIsResizing] = useState(false);
-  const [size, setSize] = useState({ width: 1200, height: 800 });
+  const [size, setSize] = useState({
+    width: fixedWidth || 1200,
+    height: fixedHeight || 800,
+  });
   const [resizeStart, setResizeStart] = useState({ x: 0, y: 0 });
 
   // New states for maximize feature
@@ -64,7 +70,7 @@ const XPWindow = ({
           x: e.clientX - offset.x,
           y: e.clientY - offset.y,
         });
-      } else if (isResizing && !isMaximized) {
+      } else if (isResizing && !isMaximized && !fixedSize) {
         setSize({
           width: Math.max(200, size.width + (e.clientX - resizeStart.x)),
           height: Math.max(150, size.height + (e.clientY - resizeStart.y)),
@@ -124,10 +130,12 @@ const XPWindow = ({
         </div>
       </div>
       <div className="xp-window-content">{children}</div>
-      <div
-        className="xp-resize-handle"
-        onMouseDown={handleResizeMouseDown}
-      ></div>
+      {!fixedSize && (
+        <div
+          className="xp-resize-handle"
+          onMouseDown={handleResizeMouseDown}
+        ></div>
+      )}
     </div>
   );
 };

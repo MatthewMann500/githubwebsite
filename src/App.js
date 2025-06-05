@@ -6,10 +6,12 @@ import XPWindow from "./components/Window/Window";
 import Explorer from "./components/Apps/Explorer";
 import Mail from "./components/Apps/Mail/Mail";
 import Paint from "./components/Apps/Paint/Paint";
+import Cathode from "./components/Apps/Cathode/CathodeFlip";
 import mail from "./Images/emblem-mail.png";
 import explorer from "./Images/emblem-web.png";
 import paint from "./Images/gnome-fs-desktop.png";
 import player from "./Images/emblem-videos.png";
+import cat from "./Images/Cat_Logo.png";
 
 function App() {
   const [windows, setWindows] = useState([]);
@@ -19,6 +21,7 @@ function App() {
     { title: "Mail", type: "mail", imageUrl: mail },
     { title: "Paint", type: "paint", imageUrl: paint },
     { title: "Media Player", type: "audio", imageUrl: player },
+    { title: "CathodeFlip", type: "cathode", imageUrl: cat },
   ];
 
   const handleOpenWindow = (windowData) => {
@@ -101,11 +104,15 @@ function App() {
             onMinimize={() => handleMinimizeWindow(win.id)}
             minimized={win.minimized}
             onFocus={() => handleFocusWindow(win.id)}
+            fixedSize={win.type === "cathode"}
+            fixedWidth={win.type === "cathode" ? 392 : undefined}
+            fixedHeight={win.type === "cathode" ? 791 : undefined}
             zIndex={index + 100}
           >
             {win.type === "explorer" && <Explorer />}
             {win.type === "mail" && <Mail />}
             {win.type === "paint" && <Paint />}
+            {win.type === "cathode" && <Cathode />}
           </XPWindow>
         ))}
 
